@@ -244,7 +244,7 @@ async fn fetch(url: &str, opts: &RequestInit, headers: &[(&str, &str)]) -> Resul
 
 /// If provided multiaddress uses dnsaddr protocol, resolve it using dns-over-https.
 /// Otherwise returns the provided address.
-pub(crate) async fn resolve_dnsaddr_multiaddress(ma: Multiaddr) -> Result<Vec<Multiaddr>> {
+pub async fn resolve_dnsaddr_multiaddress(ma: Multiaddr) -> Result<Vec<Multiaddr>> {
     const TXT_TYPE: u16 = 16;
     // cloudflare dns
     const DEFAULT_DNS_ADDR: IpAddr = IpAddr::V4(Ipv4Addr::new(1, 1, 1, 1));
