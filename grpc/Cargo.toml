@@ -32,7 +32,7 @@ tendermint.workspace = true
 bytes = "1.8"
 hex = "0.4.3"
 http-body = "1"
-k256 = "0.13.4"
+k256 = "0.13.3"
 serde = "1.0.215"
 thiserror = "1.0.61"
 tokio = { version = "1.38.0", features = ["sync"] }
