@@ -295,12 +295,8 @@ dependencies = [
  "quote",
  "rustc-hash",
  "serde",
-<<<<<<< HEAD
  "serde_derive",
  "syn 2.0.90",
-=======
- "syn 2.0.98",
->>>>>>> b88ebe0 (fix: match k256 version to secp256k1)
 ]
 
 [[package]]
@@ -421,15 +417,9 @@ dependencies = [
 
 [[package]]
 name = "async-trait"
-<<<<<<< HEAD
 version = "0.1.88"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e539d3fca749fcee5236ab05e93a52867dd549cc157c8cb7f99595f3cedffdb5"
-=======
-version = "0.1.86"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "644dd749086bf3771a2fbc5f256fdb982d53f011c7d5d560304eafeecebce79d"
->>>>>>> b88ebe0 (fix: match k256 version to secp256k1)
 dependencies = [
  "proc-macro2",
  "quote",
@@ -2685,15 +2675,9 @@ dependencies = [
 
 [[package]]
 name = "jsonrpsee"
-<<<<<<< HEAD
 version = "0.25.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1fba77a59c4c644fd48732367624d1bcf6f409f9c9a286fbc71d2f1fc0b2ea16"
-=======
-version = "0.24.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "834af00800e962dee8f7bfc0f60601de215e73e78e5497d733a2919da837d3c8"
->>>>>>> b88ebe0 (fix: match k256 version to secp256k1)
 dependencies = [
  "jsonrpsee-core",
  "jsonrpsee-http-client",
@@ -2706,15 +2690,9 @@ dependencies = [
 
 [[package]]
 name = "jsonrpsee-client-transport"
-<<<<<<< HEAD
 version = "0.25.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a2a320a3f1464e4094f780c4d48413acd786ce5627aaaecfac9e9c7431d13ae1"
-=======
-version = "0.24.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "def0fd41e2f53118bd1620478d12305b2c75feef57ea1f93ef70568c98081b7e"
->>>>>>> b88ebe0 (fix: match k256 version to secp256k1)
 dependencies = [
  "base64",
  "futures-channel",
@@ -2737,15 +2715,9 @@ dependencies = [
 
 [[package]]
 name = "jsonrpsee-core"
-<<<<<<< HEAD
 version = "0.25.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "693c93cbb7db25f4108ed121304b671a36002c2db67dff2ee4391a688c738547"
-=======
-version = "0.24.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "76637f6294b04e747d68e69336ef839a3493ca62b35bf488ead525f7da75c5bb"
->>>>>>> b88ebe0 (fix: match k256 version to secp256k1)
 dependencies = [
  "async-trait",
  "bytes",
@@ -2769,15 +2741,9 @@ dependencies = [
 
 [[package]]
 name = "jsonrpsee-http-client"
-<<<<<<< HEAD
 version = "0.25.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6962d2bd295f75e97dd328891e58fce166894b974c1f7ce2e7597f02eeceb791"
-=======
-version = "0.24.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "87c24e981ad17798bbca852b0738bfb7b94816ed687bd0d5da60bfa35fa0fdc3"
->>>>>>> b88ebe0 (fix: match k256 version to secp256k1)
 dependencies = [
  "base64",
  "http-body 1.0.1",
@@ -2798,15 +2764,9 @@ dependencies = [
 
 [[package]]
 name = "jsonrpsee-proc-macros"
-<<<<<<< HEAD
 version = "0.25.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2fa4f5daed39f982a1bb9d15449a28347490ad42b212f8eaa2a2a344a0dce9e9"
-=======
-version = "0.24.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6fcae0c6c159e11541080f1f829873d8f374f81eda0abc67695a13fc8dc1a580"
->>>>>>> b88ebe0 (fix: match k256 version to secp256k1)
 dependencies = [
  "heck",
  "proc-macro-crate",
@@ -2817,15 +2777,9 @@ dependencies = [
 
 [[package]]
 name = "jsonrpsee-types"
-<<<<<<< HEAD
 version = "0.25.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "66df7256371c45621b3b7d2fb23aea923d577616b9c0e9c0b950a6ea5c2be0ca"
-=======
-version = "0.24.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ddb81adb1a5ae9182df379e374a79e24e992334e7346af4d065ae5b2acb8d4c6"
->>>>>>> b88ebe0 (fix: match k256 version to secp256k1)
 dependencies = [
  "http 1.2.0",
  "serde",
@@ -2835,15 +2789,9 @@ dependencies = [
 
 [[package]]
 name = "jsonrpsee-wasm-client"
-<<<<<<< HEAD
 version = "0.25.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6b67695cbcf4653f39f8f8738925547e0e23fd9fe315bccf951097b9f6a38781"
-=======
-version = "0.24.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "42e41af42ca39657313748174d02766e5287d3a57356f16756dbd8065b933977"
->>>>>>> b88ebe0 (fix: match k256 version to secp256k1)
 dependencies = [
  "jsonrpsee-client-transport",
  "jsonrpsee-core",
@@ -2853,15 +2801,9 @@ dependencies = [
 
 [[package]]
 name = "jsonrpsee-ws-client"
-<<<<<<< HEAD
 version = "0.25.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2da2694c9ff271a9d3ebfe520f6b36820e85133a51be77a3cb549fd615095261"
-=======
-version = "0.24.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6f4f3642a292f5b76d8a16af5c88c16a0860f2ccc778104e5c848b28183d9538"
->>>>>>> b88ebe0 (fix: match k256 version to secp256k1)
 dependencies = [
  "http 1.2.0",
  "jsonrpsee-client-transport",
@@ -5078,15 +5020,9 @@ dependencies = [
 
 [[package]]
 name = "rustls"
-<<<<<<< HEAD
 version = "0.23.26"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "df51b5869f3a441595eac5e8ff14d486ff285f7b8c0df8770e49c3b56351f0f0"
-=======
-version = "0.23.22"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9fb9263ab4eb695e42321db096e3b8fbd715a59b154d5c88d82db2175b681ba7"
->>>>>>> b88ebe0 (fix: match k256 version to secp256k1)
 dependencies = [
  "log",
  "once_cell",
@@ -5144,13 +5080,8 @@ dependencies = [
  "rustls-webpki 0.103.1",
  "security-framework",
  "security-framework-sys",
-<<<<<<< HEAD
  "webpki-root-certs",
  "windows-sys 0.59.0",
-=======
- "webpki-roots 0.26.8",
- "winapi",
->>>>>>> b88ebe0 (fix: match k256 version to secp256k1)
 ]
 
 [[package]]
@@ -5267,13 +5198,8 @@ version = "3.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "271720403f46ca04f7ba6f55d438f8bd878d6b8ca0a1046e8228c4145bcbb316"
 dependencies = [
-<<<<<<< HEAD
  "bitflags 2.6.0",
  "core-foundation 0.10.0",
-=======
- "bitflags 2.8.0",
- "core-foundation",
->>>>>>> b88ebe0 (fix: match k256 version to secp256k1)
  "core-foundation-sys",
  "libc",
  "security-framework-sys",
@@ -5686,13 +5612,8 @@ version = "0.6.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3c879d448e9d986b661742763247d3693ed13609438cf3d006f51f5368a5ba6b"
 dependencies = [
-<<<<<<< HEAD
  "bitflags 2.6.0",
  "core-foundation 0.9.4",
-=======
- "bitflags 2.8.0",
- "core-foundation",
->>>>>>> b88ebe0 (fix: match k256 version to secp256k1)
  "system-configuration-sys",
 ]
 
@@ -5728,15 +5649,9 @@ dependencies = [
 
 [[package]]
 name = "tendermint"
-<<<<<<< HEAD
 version = "0.40.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ab2972a56891bc9173eaebdd51290bc848e448aa281881f3a4712bd8fe1899b3"
-=======
-version = "0.40.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d9703e34d940c2a293804752555107f8dbe2b84ec4c6dd5203831235868105d2"
->>>>>>> b88ebe0 (fix: match k256 version to secp256k1)
 dependencies = [
  "bytes",
  "digest 0.10.7",
@@ -5764,15 +5679,9 @@ dependencies = [
 
 [[package]]
 name = "tendermint-proto"
-<<<<<<< HEAD
 version = "0.40.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ca44b9eaaa98e8440fbafe5593b8a32a1c395c094ac566b3eb50497f8bd2bee0"
-=======
-version = "0.40.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9ae9e1705aa0fa5ecb2c6aa7fb78c2313c4a31158ea5f02048bf318f849352eb"
->>>>>>> b88ebe0 (fix: match k256 version to secp256k1)
 dependencies = [
  "bytes",
  "flex-error",
@@ -6634,18 +6543,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5f20c57d8d7db6d3b86154206ae5d8fba62dd39573114de97c2cb0578251f8e1"
 
 [[package]]
-<<<<<<< HEAD
-=======
-name = "webpki-roots"
-version = "0.26.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2210b291f7ea53617fbafcc4939f10914214ec15aace5ba62293a668f322c5c9"
-dependencies = [
- "rustls-pki-types",
-]
-
-[[package]]
->>>>>>> b88ebe0 (fix: match k256 version to secp256k1)
 name = "weedle2"
 version = "5.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
