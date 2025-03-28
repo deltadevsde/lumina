@@ -5,7 +5,7 @@
 #![cfg(not(target_arch = "wasm32"))]
 
 mod error;
-mod types;
+pub mod types;
 
 use blockstore::EitherBlockstore;
 use celestia_types::ExtendedHeader;
