@@ -36,7 +36,7 @@ pub struct NodeConfig {
 
 impl NodeConfig {
     /// Convert into NodeBuilder for the implementation
-    pub(crate) async fn into_node_builder(self) -> Result<NodeBuilder<Blockstore, Store>> {
+    pub async fn into_node_builder(self) -> Result<NodeBuilder<Blockstore, Store>> {
         let (blockstore, store) = match self.base_path {
             Some(ref base_path) => {
                 let (blockstore, store) = open_persistent_stores(base_path, &self.network).await?;
