@@ -4,7 +4,7 @@ use std::future::Future;
 
 use gloo_timers::future::TimeoutFuture;
 use js_sys::Math;
-use serde::Serialize;
+use serde::{Deserialize, Serialize};
 use serde_repr::{Deserialize_repr, Serialize_repr};
 use serde_wasm_bindgen::Serializer;
 use tracing::{info, warn};
