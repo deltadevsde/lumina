@@ -2,20 +2,25 @@
 use std::fmt::{self, Debug};
 use std::future::Future;
 
+use crate::error::Context;
 use gloo_timers::future::TimeoutFuture;
-use js_sys::Math;
+use js_sys::{Math, Promise};
+use libp2p::{multiaddr::Protocol, Multiaddr, PeerId};
 use serde::{Deserialize, Serialize};
 use serde_repr::{Deserialize_repr, Serialize_repr};
 use serde_wasm_bindgen::Serializer;
+use std::borrow::Cow;
+use std::net::{IpAddr, Ipv4Addr};
 use tracing::{info, warn};
 use tracing_subscriber::filter::LevelFilter;
 use tracing_subscriber::fmt::time::UtcTime;
 use tracing_subscriber::prelude::*;
 use tracing_web::MakeConsoleWriter;
 use wasm_bindgen::prelude::*;
+use wasm_bindgen_futures::JsFuture;
 use web_sys::{
-    DedicatedWorkerGlobalScope, MessageEvent, ServiceWorker, ServiceWorkerGlobalScope,
-    SharedWorker, SharedWorkerGlobalScope, Worker,
+    DedicatedWorkerGlobalScope, MessageEvent, Request, RequestInit, RequestMode, Response,
+    ServiceWorker, ServiceWorkerGlobalScope, SharedWorker, SharedWorkerGlobalScope, Worker,
 };
 
 use lumina_node::network;
@@ -219,20 +224,20 @@ extern "C" {
 
 async fn fetch(url: &str, opts: &RequestInit, headers: &[(&str, &str)]) -> Result<Response, Error> {
     let request = Request::new_with_str_and_init(url, opts)
-        .with_context(|| format!("failed to create a request to {url}"))?;
+        .context(format!("failed to create a request to {url}"))?;
 
     for (name, value) in headers {
         request
             .headers()
             .set(name, value)
-            .with_context(|| format!("failed setting header: '{name}: {value}'"))?;
+            .context(format!("failed setting header: '{name}: {value}'"))?;
     }
 
     let fetch_promise = fetch_with_request(&request);
 
     JsFuture::from(fetch_promise)
         .await
-        .with_context(|| format!("failed fetching {url}"))?
+        .context(format!("failed fetching {url}"))?
         .dyn_into()
         .context("`response` is not `Response` type")
 }
